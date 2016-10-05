@@ -37,9 +37,14 @@ const char *countryCodeAssociatedObjectKey = "abtz_countryCode";
 {
     CLLocation *location = objc_getAssociatedObject(self, locationAssociatedObjectKey);
     if (location == nil) {
+        //NSLog(@"Getting location for %@", self);
+        
         // zone.tab is available locally if you prefer, but "backward" (used below) is not.
-        //NSURL *zonetabURL = [NSURL fileURLWithPath:@"/usr/share/zoneinfo/zone.tab"];
-        NSURL *zonetabURL = [[NSBundle mainBundle] URLForResource:@"zone" withExtension:@"tab"];
+        NSURL *zonetabURL = [NSURL fileURLWithPath:@"/usr/share/zoneinfo/zone.tab"];
+        
+        if (!zonetabURL){
+            zonetabURL = [[NSBundle mainBundle] URLForResource:@"zone" withExtension:@"tab"];
+        }
 
         // Bugfix for using cocoapods with framework
         if (!zonetabURL) {
