@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C893AF4C1DA4B7A300E4E646 /* TZLocation.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = TZLocation.podspec.json; path = ../TZLocation.podspec.json; sourceTree = "<group>"; };
 		EE4AEEDC180DDC88001F4A7A /* zone.tab */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = zone.tab; path = ../Source/zone.tab; sourceTree = "<group>"; };
 		EE4AEEDE180DDC91001F4A7A /* backward */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = backward; path = ../Source/backward; sourceTree = "<group>"; };
 		EE4AEEE1180DE10B001F4A7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		EEC5667A17FF6F5900DAEFBC = {
 			isa = PBXGroup;
 			children = (
+				C893AF4C1DA4B7A300E4E646 /* TZLocation.podspec.json */,
 				EE4AEEE2180DE558001F4A7A /* LICENSE */,
 				EE4AEEE1180DE10B001F4A7A /* README.md */,
 				EE4AEEE0180DE0D2001F4A7A /* TZLocation Files */,
@@ -240,6 +242,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tom Harrington";
 				TargetAttributes = {
+					EEC5668217FF6F5900DAEFBC = {
+						DevelopmentTeam = 69PLJFK56W;
+					};
 					EEC566A617FF6F5A00DAEFBC = {
 						TestTargetID = EEC5668217FF6F5900DAEFBC;
 					};
@@ -434,9 +439,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 69PLJFK56W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TZLocation/TZLocation-Prefix.pch";
 				INFOPLIST_FILE = "TZLocation/TZLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,9 +454,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 69PLJFK56W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TZLocation/TZLocation-Prefix.pch";
 				INFOPLIST_FILE = "TZLocation/TZLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
